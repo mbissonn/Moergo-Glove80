@@ -244,12 +244,12 @@
 
         _NAVNUM {
             bindings = <
-            &none     &none            &none               &none      &none                                                                                                    &none      &none      &none      &none            &tog _QWERTY
-            &none     &none            &none               &none      &none               &none                                                                     &none      &none      &none      &none      &none            &none
-            &none     &kp ESC          &td_ctrl_left_home  &kp UP     &td_ctrl_right_end  &kp LPAR                                                                  &kp RPAR   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp LC(DEL)      &none
-            &none     &kp TAB          &kp LEFT            &kp DOWN   &kp RIGHT           &mm_btb_l                                                                 &mm_btb_r  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp SEMI         &none
-            &none     &mt LSHFT SPACE  &kp UNDER           &kp COLON  &kp MINUS           &kp EQUAL  &trans  &trans       &trans  &trans  &trans       &trans       &kp PIPE   &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt LSHIFT BSLH  &none
-            &kp LGUI  &kp LCTRL        &none               &none      &none                          &trans  &mo _USFUNC  &trans  &trans  &mo _USFUNC  &mt RALT N0             &none      &none      &none      &kp RCTRL        &kp RGUI
+            &none     &none            &none        &none      &none                                                                                            &none      &none      &none      &none            &tog _QWERTY
+            &none     &none            &none        &none      &none       &none                                                                     &none      &none      &none      &none      &none            &none
+            &none     &kp ESC          &td_cl_home  &kp UP     &td_cr_end  &kp LPAR                                                                  &kp RPAR   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp LC(DEL)      &none
+            &none     &kp TAB          &kp LEFT     &kp DOWN   &kp RIGHT   &mm_btb_l                                                                 &mm_btb_r  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp SEMI         &none
+            &none     &mt LSHFT SPACE  &kp UNDER    &kp COLON  &kp MINUS   &kp EQUAL  &trans  &trans       &trans  &trans  &trans       &trans       &kp PIPE   &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt LSHIFT BSLH  &none
+            &kp LGUI  &kp LCTRL        &none        &none      &none                  &trans  &mo _USFUNC  &trans  &trans  &mo _USFUNC  &mt RALT N0             &none      &none      &none      &kp RCTRL        &kp RGUI
             >; 
         };
 
