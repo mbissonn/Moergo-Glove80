@@ -275,18 +275,18 @@
             >;
         };
 
-/*
+
         _GAMING {
             bindings = <
-            &kp ESC       &kp F6   &kp F7    &kp F8  &kp F9                                                                                          &none     &none      &none      &none            &dt_gm_tog
-            &kp GRAVE     &kp F1   &kp F2    &kp F3  &kp F4  &kp F5                                                                          &none   &none     &none      &none      &none            &gm_str         
-            &kp BSLH      &kp Q    &kp W     &kp E   &kp R   &kp T                                                                           &kp Y   &kp U     &kp I      &kp O      &kp P            &none
-            &kp TAB       &kp A    &kp S     &kp D   &kp F   &kp G                                                                           &kp H   &kp J     &kp K      &kp L      &kp SQT          &none
-            &kp LSHFT     &kp Z    &kp X     &kp C   &kp V   &kp B  &kp LALT   &kp ENTER  &kp BSPC  &none  &none              &none          &kp N   &kp M     &kp COMMA  &kp DOT    &mt RSHFT SLASH  &none
-            &kp PAGE_UP   &kp N1   &kp N2    &kp N3  &kp N4         &kp LCTRL  &lt SPACE  &kp DEL   &none  &lt _NAVNUM SPACE  &mt RALT BSPC          &none      &none     &none      &kp RCTRL        &kp RGUI
+            &kp ESC    &kp F6   &kp F7    &kp F8  &kp F9                                                                                          &none     &none      &none      &none            &dt_gm_tog
+            &kp GRAVE  &kp F1   &kp F2    &kp F3  &kp F4  &kp F5                                                                          &none   &none     &none      &none      &none            &gm_str         
+            &kp BSLH   &kp Q    &kp W     &kp E   &kp R   &kp T                                                                           &kp Y   &kp U     &kp I      &kp O      &kp P            &none
+            &kp TAB    &kp A    &kp S     &kp D   &kp F   &kp G                                                                           &kp H   &kp J     &kp K      &kp L      &kp SQT          &none
+            &kp LSHFT  &kp Z    &kp X     &kp C   &kp V   &kp B  &kp LALT   &kp ENTER  &kp BSPC  &none  &none              &none          &kp N   &kp M     &kp COMMA  &kp DOT    &mt RSHFT SLASH  &none
+            &kp EQUAL  &kp N1   &kp N2    &kp N3  &kp N4         &kp LCTRL  &kp SPACE  &kp DEL   &none  &lt _NAVNUM SPACE  &mt RALT BSPC          &none     &none      &none      &kp RCTRL        &kp RGUI
             >;
         };
-*/        
+        
 /*
         lower_layer {
             bindings = <
