@@ -211,7 +211,7 @@
       
         _34KQWE {
             bindings = <
-            &td_em_bt  &none        &none  &none  &none                                                                                                  &none     &none      &none      &none            &gaming
+            &td_em_bt  &none        &none  &none  &none                                                                                                  &none     &none      &none      &none            &dt_gm_tog
             &none      &none        &none  &none  &none  &none                                                                                   &none   &none     &none      &none      &none            &none
             &none      &td_q_esc    &kp W  &kp E  &kp R  &kp T                                                                                   &kp Y   &kp U     &kp I      &kp O      &kp P            &none
             &none      &td_a_tab    &kp S  &kp D  &kp F  &kp G                                                                                   &kp H   &kp J     &kp K      &kp L      &kp SQT          &none
@@ -222,7 +222,7 @@
 
         _QWERTY {
             bindings = <
-            &td_em_bt     &kp F1    &kp F2    &kp F3  &kp F4                                                                                                    &kp F5    &kp F6     &kp F7     &kp F8    &gaming
+            &td_em_bt     &kp F1    &kp F2    &kp F3  &kp F4                                                                                                    &kp F5    &kp F6     &kp F7     &kp F8    &dt_gm_tog
             &kp GRAVE     &kp N1    &kp N2    &kp N3  &kp N4    &kp N5                                                                                  &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &kp EQUAL
             &td_esc_mtsk  &kp Q     &kp W     &kp E   &kp R     &kp T                                                                                   &kp Y   &kp U     &kp I      &kp O      &kp P     &kp MINUS
             &kp TAB       &kp A     &kp S     &kp D   &kp F     &kp G                                                                                   &kp H   &kp J     &kp K      &kp L      &kp SQT   &kp BSLH
@@ -233,7 +233,7 @@
 
         _CLMKdh {
             bindings = <
-            &td_em_bt     &kp F1    &kp F2    &kp F3  &kp F4                                                                                                      &kp F5    &kp F6     &kp F7     &kp F8    &gaming
+            &td_em_bt     &kp F1    &kp F2    &kp F3  &kp F4                                                                                                      &kp F5    &kp F6     &kp F7     &kp F8    &dt_gm_tog
             &kp GRAVE     &kp N1    &kp N2    &kp N3  &kp N4    &kp N5                                                                                    &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &kp EQUAL
             &td_esc_mtsk  &kp Q     &kp W     &kp F   &kp P     &kp B                                                                                     &kp J   &kp L     &kp U      &kp Y      &kp SQT   &kp MINUS
             &kp TAB       &kp A     &kp R     &kp S   &kp T     &kp G                                                                                     &kp M   &kp N     &kp E      &kp I      &kp O     &kp BSLH
