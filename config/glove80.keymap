@@ -132,9 +132,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>; 
         };
     };
-};
 
-/{
     macros {
         rgb_ug_status_macro: rgb_ug_status_macro_0 {
             label = "RGB_UG_STATUS";
@@ -207,9 +205,7 @@
             bindings = <&kp M &kp B &kp I &kp S &kp S &kp O &kp N &kp N &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M >;
         };          
     };
-};
 
-/ {
     keymap {
         compatible = "zmk,keymap";
       
