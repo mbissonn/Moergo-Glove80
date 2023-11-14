@@ -220,7 +220,7 @@
             >;
         };
 
-/*        _QWERTY {
+        _QWERTY {
             bindings = <
             &td_em_bt     &kp F1    &kp F2    &kp F3  &kp F4                                                                                                    &kp F5    &kp F6     &kp F7     &kp F8    &dt_gm_tog
             &kp GRAVE     &kp N1    &kp N2    &kp N3  &kp N4    &kp N5                                                                                  &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &kp EQUAL
@@ -241,7 +241,7 @@
             &kp PAGE_UP   &kp HOME  &kp LEFT  &kp UP  &kp LBKT         &kp LCTRL  &lt _NAVNUM ENTER  &kp LALT   &kp RALT  &lt _NAVNUM SPACE  &mt RALT N0          &kp RBKT  &kp DOWN   &kp RIGHT  &kp END   &kp PG_DN
             >;
         };
-*/
+
         _NAVNUM {
             bindings = <
             &none     &none            &none        &none      &none                                                                                            &none      &none      &none      &none            &tog _QWERTY
@@ -286,7 +286,7 @@
             &kp EQUAL  &kp N1   &kp N2    &kp N3  &kp N4         &kp LCTRL  &kp SPACE  &kp DEL   &none  &lt _NAVNUM SPACE  &mt RALT BSPC          &none     &none      &none      &kp RCTRL        &kp RGUI
             >;
         };
-        
+
 /*
         lower_layer {
             bindings = <
