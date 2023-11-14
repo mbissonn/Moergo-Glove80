@@ -193,7 +193,7 @@
             #binding-cells = <0>;
             wait-ms = <20>;
             tap-ms = <5>;
-            bindings = <&kp B &kp L &kp U &kp E &kp T &kp O &kp O &kp T &kp H >;
+            bindings = <&kp G &kp A &kp M &kp I &kp N &kp G>;
         };  
 
         em_str: email_string {
