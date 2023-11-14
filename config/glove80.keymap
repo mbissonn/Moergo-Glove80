@@ -132,7 +132,9 @@
             mods = <(MOD_LSFT|MOD_RSFT)>; 
         };
     };
+};
 
+/{
     macros {
         rgb_ug_status_macro: rgb_ug_status_macro_0 {
             label = "RGB_UG_STATUS";
@@ -205,7 +207,9 @@
             bindings = <&kp M &kp B &kp I &kp S &kp S &kp O &kp N &kp N &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M >;
         };          
     };
+};
 
+/ {
     keymap {
         compatible = "zmk,keymap";
       
@@ -217,8 +221,8 @@
             &none      &td_a_tab    &kp S  &kp D  &kp F  &kp G                                                                                   &kp H   &kp J     &kp K      &kp L      &kp SQT          &none
             &none      &mt LSHFT Z  &kp X  &kp C  &kp V  &kp B  &none          &none              &none  &none &none              &none          &kp N   &kp M     &kp COMMA  &kp DOT    &mt RSHFT SLASH  &none
             &kp LGUI   &kp LCTRL    &none  &none  &none         &mt LCTRL DEL  &lt _NAVNUM ENTER  &none  &none &lt _NAVNUM SPACE  &mt RALT BSPC          &none      &none     &none      &kp RCTRL        &kp RGUI
-            >;};
-
+            >;
+        };
 
         _QWERTY {
             bindings = <
