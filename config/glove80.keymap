@@ -113,7 +113,7 @@
              label = "DOUBLE_TAP_GAMING_TOGGLE";  
              #binding-cells = <0>;
              tapping-term-ms = <200>;
-             bindings = <&none>, <&tog _GAMING>;
+             bindings = <&none>, <&tog _GAMING &rgb_ug RGB_STATUS>;
         };
 
         mm_btb_l: mm_brace_to_bracket_left {        
@@ -211,12 +211,12 @@
       
         _34KQWE {
             bindings = <
-            &td_em_bt  &none        &none  &none  &none                                                                                                  &none     &none      &none      &none            &dt_gm_tog
-            &none      &none        &none  &none  &none  &none                                                                                   &none   &none     &none      &none      &none            &none
-            &none      &td_q_esc    &kp W  &kp E  &kp R  &kp T                                                                                   &kp Y   &kp U     &kp I      &kp O      &kp P            &none
-            &none      &td_a_tab    &kp S  &kp D  &kp F  &kp G                                                                                   &kp H   &kp J     &kp K      &kp L      &kp SQT          &none
-            &none      &mt LSHFT Z  &kp X  &kp C  &kp V  &kp B  &none          &none              &none  &none &none              &none          &kp N   &kp M     &kp COMMA  &kp DOT    &mt RSHFT SLASH  &none
-            &kp LGUI   &kp LCTRL    &none  &none  &none         &mt LCTRL DEL  &lt _NAVNUM ENTER  &none  &none &lt _NAVNUM SPACE  &mt RALT BSPC          &none      &none     &none      &kp RCTRL        &kp RGUI
+            &td_em_bt  &none        &none  &none  &none                                                                                                   &none     &none      &none      &none            &dt_gm_tog
+            &none      &none        &none  &none  &none  &none                                                                                    &none   &none     &none      &none      &none            &none
+            &none      &td_q_esc    &kp W  &kp E  &kp R  &kp T                                                                                    &kp Y   &kp U     &kp I      &kp O      &kp P            &none
+            &none      &td_a_tab    &kp S  &kp D  &kp F  &kp G                                                                                    &kp H   &kp J     &kp K      &kp L      &kp SQT          &none
+            &none      &mt LSHFT Z  &kp X  &kp C  &kp V  &kp B  &none              &none          &none  &none  &none          &none              &kp N   &kp M     &kp COMMA  &kp DOT    &mt RSHFT SLASH  &none
+            &kp LGUI   &kp LCTRL    &none  &none  &none         &lt _NAVNUM ENTER  &mt LCTRL DEL  &none  &none  &mt RALT BSPC  &lt _NAVNUM SPACE          &none      &none     &none      &kp RCTRL        &kp RGUI
             >;
         };
 
@@ -226,8 +226,8 @@
             &kp GRAVE     &kp N1    &kp N2    &kp N3  &kp N4    &kp N5                                                                                  &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &kp EQUAL
             &td_esc_mtsk  &kp Q     &kp W     &kp E   &kp R     &kp T                                                                                   &kp Y   &kp U     &kp I      &kp O      &kp P     &kp MINUS
             &kp TAB       &kp A     &kp S     &kp D   &kp F     &kp G                                                                                   &kp H   &kp J     &kp K      &kp L      &kp SQT   &kp BSLH
-            &kp LSHFT     &kp Z     &kp X     &kp C   &kp V     &kp B  &kp DEL    &kp SPACE          &kp LGUI   &kp RGUI  &kp ENTER          &kp BSPC   &kp N   &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp LSHFT
-            &kp PAGE_UP   &kp HOME  &kp LEFT  &kp UP  &kp LBKT         &kp LCTRL  &lt _NAVNUM ENTER  &kp LALT   &kp RCTRL &lt _NAVNUM SPACE  &kp RALT           &kp RBKT  &kp DOWN   &kp RIGHT  &kp END   &kp PG_DN
+            &kp LSHFT     &kp Z     &kp X     &kp C   &kp V     &kp B  &kp SPACE          &kp DEL    &kp LGUI   &kp RGUI   &kp BSPC   &kp ENTER          &kp N   &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp LSHFT
+            &kp PAGE_UP   &kp HOME  &kp LEFT  &kp UP  &kp LBKT         &lt _NAVNUM ENTER  &kp LCTRL  &kp LALT   &kp RCTRL  &kp RALT   &lt _NAVNUM SPACE          &kp RBKT  &kp DOWN   &kp RIGHT  &kp END   &kp PG_DN
             >;
         };
 
@@ -237,8 +237,8 @@
             &kp GRAVE     &kp N1    &kp N2    &kp N3  &kp N4    &kp N5                                                                                    &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &kp EQUAL
             &td_esc_mtsk  &kp Q     &kp W     &kp F   &kp P     &kp B                                                                                     &kp J   &kp L     &kp U      &kp Y      &kp SQT   &kp MINUS
             &kp TAB       &kp A     &kp R     &kp S   &kp T     &kp G                                                                                     &kp M   &kp N     &kp E      &kp I      &kp O     &kp BSLH
-            &kp LSHFT     &kp Z     &kp X     &kp C   &kp D     &kp V  &kp DEL    &kp SPACE          &kp LGUI   &kp RGUI  &kp ENTER          &kp BSPC     &kp K   &kp H     &kp COMMA  &kp DOT    &kp FSLH  &kp LSHFT
-            &kp PAGE_UP   &kp HOME  &kp LEFT  &kp UP  &kp LBKT         &kp LCTRL  &lt _NAVNUM ENTER  &kp LALT   &kp RALT  &lt _NAVNUM SPACE  &mt RALT N0          &kp RBKT  &kp DOWN   &kp RIGHT  &kp END   &kp PG_DN
+            &kp LSHFT     &kp Z     &kp X     &kp C   &kp D     &kp V  &kp SPACE          &kp DEL    &kp LGUI   &kp RGUI  &kp BSPC     &kp ENTER          &kp K   &kp H     &kp COMMA  &kp DOT    &kp FSLH  &kp LSHFT
+            &kp PAGE_UP   &kp HOME  &kp LEFT  &kp UP  &kp LBKT         &lt _NAVNUM ENTER  &kp LCTRL  &kp LALT   &kp RALT  &mt RALT N0  &lt _NAVNUM SPACE          &kp RBKT  &kp DOWN   &kp RIGHT  &kp END   &kp PG_DN
             >;
         };
 
@@ -248,8 +248,8 @@
             &none     &none            &none        &none      &none       &none                                                                     &none      &none      &none      &none      &none            &none
             &none     &td_esc_mtsk     &td_cl_home  &kp UP     &td_cr_end  &kp LPAR                                                                  &kp RPAR   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp LC(DEL)      &none
             &none     &kp TAB          &kp LEFT     &kp DOWN   &kp RIGHT   &mm_btb_l                                                                 &mm_btb_r  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp SEMI         &none
-            &none     &mt LSHFT SPACE  &kp UNDER    &kp COLON  &kp MINUS   &kp EQUAL  &trans  &trans       &trans  &trans  &trans       &trans       &kp PIPE   &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt LSHIFT BSLH  &none
-            &kp LGUI  &kp LCTRL        &none        &none      &none                  &trans  &mo _USFUNC  &trans  &trans  &mo _USFUNC  &mt RALT N0             &none      &none      &none      &kp RCTRL        &kp RGUI
+            &none     &mt LSHFT SPACE  &kp UNDER    &kp COLON  &kp MINUS   &kp EQUAL  &trans       &trans  &trans  &trans  &trans       &trans       &kp PIPE   &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt LSHIFT BSLH  &none
+            &kp LGUI  &kp LCTRL        &none        &none      &none                  &mo _USFUNC  &trans  &trans  &trans  &mt RGUI N0  &mo _USFUNC             &none      &none      &none      &kp RCTRL        &kp RGUI
             >; 
         };
 
@@ -266,10 +266,10 @@
 
         _BTOOTH {
             bindings = <
-            &none  &bt_0  &bt_1  &bt_2  &bt_3                                                                          &none  &none  &none  &none  &none       
-            &none  &none  &none  &none  &none  &none                                                            &none  &none  &none  &none  &none  &none
-            &none  &none  &none  &none  &none  &none                                                            &none  &none  &none  &none  &none  &none
-            &none  &none  &none  &none  &none  &none                                                            &none  &none  &none  &none  &none  &none
+            &none  &bt_0  &bt_1  &bt_2  &bt_3                                                                               &none  &none  &none  &none  &none       
+            &none  &none  &none  &none  &none  &none                                                                 &none  &none  &none  &none  &none  &none
+            &none  &none  &none  &none  &none  &none                                                                 &none  &none  &none  &none  &none  &none
+            &none  &none  &none  &none  &none  &none                                                                 &none  &none  &none  &none  &none  &none
             &none  &none  &none  &none  &none  &none  &bt_str       &bt BT_CLR      &bootloader &none  &none  &none  &none  &none  &none  &none  &none  &none
             &none  &none  &none  &none  &none         &out OUT_USB  &bt BT_CLR_ALL  &sys_reset  &none  &none  &none         &none  &none  &none  &none  &none       
             >;
