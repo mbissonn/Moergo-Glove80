@@ -266,7 +266,7 @@
             &kp TAB    &kp A    &kp S     &kp D   &kp F   &kp G                                                                            &kp H   &kp J     &kp K      &kp L      &kp SQT   &kp BSLH
             &kp DEL    &kp Z    &kp X     &kp C   &kp V   &kp B   &kp SPACE  &kp ENTER  &kp DEL   &kp RGUI   &kp ENTER          &kp BSPC   &kp N   &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp LSHFT
             &kp EQUAL  &kp N4   &kp N3    &kp N2  &kp N1          &kp LCTRL  &kp LSHFT  &kp LALT  &kp RCTRL  &lt _NAVNUM SPACE  &kp RALT           &kp RBKT  &kp DOWN   &kp RIGHT  &kp END   &kp PG_DN
-            >;
+            >;e
         };
     };
 };
