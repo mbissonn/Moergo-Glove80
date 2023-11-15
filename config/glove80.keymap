@@ -18,7 +18,7 @@
 #define _USFUNC 4
 #define _BTOOTH 5
 #define _GAMING 6
-#define _GAME01 7
+#define _SCZerg 7
 
 / {
     behaviors {
@@ -174,7 +174,36 @@
             wait-ms = <20>;
             tap-ms = <5>;
             bindings = <&kp M &kp B &kp I &kp S &kp S &kp O &kp N &kp N &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M >;
-        };          
+        };
+
+        to_34: to_34kqwe {
+            compatible = "zmk,behavior-macro";
+            label = "TO_34KQWE";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <5>;
+            bindings = <&to _34KQWE &rgb_ug RGB_OFF>;
+        };       
+
+        to_gm: to_gaming {
+            compatible = "zmk,behavior-macro";
+            label = "TO_GAMING";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <5>;
+            bindings = <&to _GAMING &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(360,360,360)>;
+        }; 
+
+        to_SCz: to_sczerg {
+            compatible = "zmk,behavior-macro";
+            label = "TO_SCZERG";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <5>;
+            bindings = <&to _SCZerg &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(360,360,360)>;
+        }; 
+        
+              
     };
 
     keymap {
@@ -182,9 +211,9 @@
       
         _34KQWE {
             bindings = <
-            &td_em_bt  &none        &none  &none  &none                                                                                                   &none     &none      &none      &none            &dt_gm_tog
-            &none      &none        &none  &none  &none  &none                                                                                    &none   &none     &none      &none      &none            &none
-            &none      &td_q_esc    &kp W  &kp E  &kp R  &kp T                                                                                    &kp Y   &kp U     &kp I      &kp O      &kp P            &none
+            &td_em_bt  &none        &none  &none  &none                                                                                                   &none     &none      &none      &none            &none
+            &to_gm     &none        &none  &none  &none  &none                                                                                    &none   &none     &none      &none      &none            &none
+            &to_scz    &td_q_esc    &kp W  &kp E  &kp R  &kp T                                                                                    &kp Y   &kp U     &kp I      &kp O      &kp P            &none
             &none      &td_a_tab    &kp S  &kp D  &kp F  &kp G                                                                                    &kp H   &kp J     &kp K      &kp L      &kp SQT          &none
             &none      &mt LSHFT Z  &kp X  &kp C  &kp V  &kp B  &none              &none          &none  &none  &none          &none              &kp N   &kp M     &kp COMMA  &kp DOT    &mt RSHFT SLASH  &none
             &kp LGUI   &kp LCTRL    &none  &none  &none         &lt _NAVNUM ENTER  &mt LCTRL DEL  &none  &none  &mt RALT BSPC  &lt _NAVNUM SPACE          &none      &none     &none      &kp RCTRL        &kp RGUI
@@ -193,10 +222,10 @@
 
         _QWERTY {
             bindings = <
-            &td_em_bt     &kp F1    &kp F2    &kp F3  &kp F4                                                                                                    &kp F5    &kp F6     &kp F7     &kp F8    &dt_gm_tog
-            &kp GRAVE     &kp N1    &kp N2    &kp N3  &kp N4    &kp N5                                                                                  &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &kp EQUAL
-            &td_esc_mtsk  &kp Q     &kp W     &kp E   &kp R     &kp T                                                                                   &kp Y   &kp U     &kp I      &kp O      &kp P     &kp MINUS
-            &kp TAB       &kp A     &kp S     &kp D   &kp F     &kp G                                                                                   &kp H   &kp J     &kp K      &kp L      &kp SQT   &kp BSLH
+            &td_em_bt     &kp F1    &kp F2    &kp F3  &kp F4                                                                                                     &kp F5    &kp F6     &kp F7     &kp F8    &kp F9
+            &kp GRAVE     &kp N1    &kp N2    &kp N3  &kp N4    &kp N5                                                                                   &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &kp EQUAL
+            &td_esc_mtsk  &kp Q     &kp W     &kp E   &kp R     &kp T                                                                                    &kp Y   &kp U     &kp I      &kp O      &kp P     &kp MINUS
+            &kp TAB       &kp A     &kp S     &kp D   &kp F     &kp G                                                                                    &kp H   &kp J     &kp K      &kp L      &kp SQT   &kp BSLH
             &kp LSHFT     &kp Z     &kp X     &kp C   &kp V     &kp B  &kp SPACE          &kp DEL    &kp LGUI   &kp RGUI   &kp BSPC   &kp ENTER          &kp N   &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp LSHFT
             &kp PAGE_UP   &kp HOME  &kp LEFT  &kp UP  &kp LBKT         &lt _NAVNUM ENTER  &kp LCTRL  &kp LALT   &kp RCTRL  &kp RALT   &lt _NAVNUM SPACE          &kp RBKT  &kp DOWN   &kp RIGHT  &kp END   &kp PG_DN
             >;
@@ -204,7 +233,7 @@
 
         _CLMKdh {
             bindings = <    
-            &td_em_bt     &kp F1    &kp F2    &kp F3  &kp F4                                                                                                      &kp F5    &kp F6     &kp F7     &kp F8    &dt_gm_tog
+            &td_em_bt     &kp F1    &kp F2    &kp F3  &kp F4                                                                                                      &kp F5    &kp F6     &kp F7     &kp F8    &kp F9
             &kp GRAVE     &kp N1    &kp N2    &kp N3  &kp N4    &kp N5                                                                                    &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &kp EQUAL
             &td_esc_mtsk  &kp Q     &kp W     &kp F   &kp P     &kp B                                                                                     &kp J   &kp L     &kp U      &kp Y      &kp SQT   &kp MINUS
             &kp TAB       &kp A     &kp R     &kp S   &kp T     &kp G                                                                                     &kp M   &kp N     &kp E      &kp I      &kp O     &kp BSLH
@@ -249,7 +278,7 @@
 
         _GAMING {
             bindings = <
-            &kp ESC    &kp F8   &kp F7    &kp F6  &kp F5                                                                                           &kp F5    &kp F6     &kp F7     &kp F8    &to _GAME01
+            &to_34     &kp F8   &kp F7    &kp F6  &kp F5                                                                                           &kp F5    &kp F6     &kp F7     &kp F8    &to _SCZerg
             &kp GRAVE  &kp F4   &kp F3    &kp F2  &kp F1  &kp F9                                                                           &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &rgb_ug RGB_TOG     
             &kp BSLH   &kp Q    &kp W     &kp E   &kp R   &kp T                                                                            &kp Y   &kp U     &kp I      &kp O      &kp P     &kp MINUS
             &kp TAB    &kp A    &kp S     &kp D   &kp F   &kp G                                                                            &kp H   &kp J     &kp K      &kp L      &kp SQT   &kp BSLH
@@ -258,7 +287,7 @@
             >;
         };
 
-        _GAME01 {
+        _SCZerg {
             bindings = <
             &kp ESC    &kp F8   &kp F7    &kp F6  &kp F5                                                                                           &kp F5    &kp F6     &kp F7     &kp F8    &to _34KQWE
             &kp GRAVE  &kp F4   &kp F3    &kp F2  &kp F1  &kp F9                                                                           &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &rgb_ug RGB_TOG     
