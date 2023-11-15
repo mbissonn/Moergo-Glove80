@@ -113,7 +113,7 @@
              label = "DOUBLE_TAP_GAMING_TOGGLE";  
              #binding-cells = <0>;
              tapping-term-ms = <200>;
-             bindings = <&none>, <&tog _GAMING &rgb_ug RGB_TOG>;
+             bindings = <&none>, <&tog _GAMING>;
         };
 
         mm_btb_l: mm_brace_to_bracket_left {        
@@ -279,7 +279,7 @@
         _GAMING {
             bindings = <
             &kp ESC    &kp F6   &kp F7    &kp F8  &kp F9                                                                                           &kp F5    &kp F6     &kp F7     &kp F8    &dt_gm_tog
-            &kp GRAVE  &kp F1   &kp F2    &kp F3  &kp F4  &kp F5                                                                           &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &kp EQUAL     
+            &kp GRAVE  &kp F1   &kp F2    &kp F3  &kp F4  &kp F5                                                                           &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &rgb_ug RGB_TOG     
             &kp BSLH   &kp Q    &kp W     &kp E   &kp R   &kp T                                                                            &kp Y   &kp U     &kp I      &kp O      &kp P     &kp MINUS
             &kp TAB    &kp A    &kp S     &kp D   &kp F   &kp G                                                                            &kp H   &kp J     &kp K      &kp L      &kp SQT   &kp BSLH
             &kp LSHFT  &kp Z    &kp X     &kp C   &kp V   &kp B  &kp ENTER  &kp LALT   &kp BSPC   &kp RGUI   &kp BSPC   &kp ENTER          &kp N   &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp LSHFT
