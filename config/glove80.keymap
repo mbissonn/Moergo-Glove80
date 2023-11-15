@@ -71,22 +71,6 @@
              bindings = <&kp C_PP>, <&kp C_NEXT>, <&kp C_PREV>;
         };
 
-        td_em_bt: td_email_string_bt_toggle {
-             compatible = "zmk,behavior-tap-dance";
-             label = "TD_EMAIL_STRING_BT_TOGGLE";  
-             #binding-cells = <0>;
-             tapping-term-ms = <200>;
-             bindings = <&none>, <&em_str>, <&mo _BTOOTH>;
-        };
-        
-        dt_gm_tog: dt_gaming_toggle {
-             compatible = "zmk,behavior-tap-dance";
-             label = "DOUBLE_TAP_GAMING_TOGGLE";  
-             #binding-cells = <0>;
-             tapping-term-ms = <200>;
-             bindings = <&none>, <&tog _GAMING>;
-        };
-
         mm_btb_l: mm_brace_to_bracket_left {        
             compatible = "zmk,behavior-mod-morph";
             label = "MM_BRACE_TO_BRACKET_LEFT";
@@ -148,34 +132,7 @@
                 = <&out OUT_BLE>,
                   <&bt BT_SEL 3>;
         };
-
-        bt_str: bluetooth_string {
-            compatible = "zmk,behavior-macro";
-            label = "BLUETOOTH_STRING";
-            #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <5>;
-            bindings = <&kp B &kp L &kp U &kp E &kp T &kp O &kp O &kp T &kp H >;
-        };       
         
-        gm_str: gaming_string {
-            compatible = "zmk,behavior-macro";
-            label = "GAMING_STRING";
-            #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <5>;
-            bindings = <&kp G &kp A &kp M &kp I &kp N &kp G>;
-        };  
-
-        em_str: email_string {
-            compatible = "zmk,behavior-macro";
-            label = "EMAIL_STRING";
-            #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <5>;
-            bindings = <&kp M &kp B &kp I &kp S &kp S &kp O &kp N &kp N &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M >;
-        };
-
         to_34: to_34kqwe {
             compatible = "zmk,behavior-macro";
             label = "TO_34KQWE";
@@ -183,13 +140,13 @@
             wait-ms = <20>;
             tap-ms = <5>;
             bindings = <&to _34KQWE &rgb_ug RGB_OFF>;
-        };       
+        };      
 
         to_gm: to_gaming {
             compatible = "zmk,behavior-macro";
             label = "TO_GAMING";
             #binding-cells = <0>;
-            wait-ms = <20>;
+            wait-ms = <100>;
             tap-ms = <5>;
             bindings = <&to _GAMING &rgb_ug RGB_ON &rgb_ug RGB_OFF>;
         }; 
@@ -198,9 +155,9 @@
             compatible = "zmk,behavior-macro";
             label = "TO_SCZERG";
             #binding-cells = <0>;
-            wait-ms = <20>;
+            wait-ms = <100>;
             tap-ms = <5>;
-            bindings = <&to _SCZerg &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(255,0,255)>;
+            bindings = <&to _SCZerg &rgb_ug RGB_ON &rgb_ug RGB_OFF &rgb_ug RGB_ON &rgb_ug RGB_OFF>;
         }; 
         
               
@@ -211,18 +168,18 @@
       
         _34KQWE {
             bindings = <
-            &td_em_bt  &none        &none  &none  &none                                                                                                   &none     &none      &none      &none            &none
-            &to_gm     &none        &none  &none  &none  &none                                                                                    &none   &none     &none      &none      &none            &none
-            &to_scz    &td_q_esc    &kp W  &kp E  &kp R  &kp T                                                                                    &kp Y   &kp U     &kp I      &kp O      &kp P            &none
-            &none      &td_a_tab    &kp S  &kp D  &kp F  &kp G                                                                                    &kp H   &kp J     &kp K      &kp L      &kp SQT          &none
-            &none      &mt LSHFT Z  &kp X  &kp C  &kp V  &kp B  &none              &none          &none  &none  &none          &none              &kp N   &kp M     &kp COMMA  &kp DOT    &mt RSHFT SLASH  &none
-            &kp LGUI   &kp LCTRL    &none  &none  &none         &lt _NAVNUM ENTER  &mt LCTRL DEL  &none  &none  &mt RALT BSPC  &lt _NAVNUM SPACE          &none      &none     &none      &kp RCTRL        &kp RGUI
+            &mo _BTOOTH  &none        &none  &none  &none                                                                                                   &none     &none      &none      &none            &none
+            &to_gm       &none        &none  &none  &none  &none                                                                                    &none   &none     &none      &none      &none            &none
+            &to_scz      &td_q_esc    &kp W  &kp E  &kp R  &kp T                                                                                    &kp Y   &kp U     &kp I      &kp O      &kp P            &none
+            &none        &td_a_tab    &kp S  &kp D  &kp F  &kp G                                                                                    &kp H   &kp J     &kp K      &kp L      &kp SQT          &none
+            &none        &mt LSHFT Z  &kp X  &kp C  &kp V  &kp B  &none              &none          &none  &none  &none          &none              &kp N   &kp M     &kp COMMA  &kp DOT    &mt RSHFT SLASH  &none
+            &kp LGUI     &kp LCTRL    &none  &none  &none         &lt _NAVNUM ENTER  &mt LCTRL DEL  &none  &none  &mt RALT BSPC  &lt _NAVNUM SPACE          &none      &none     &none      &kp RCTRL        &kp RGUI
             >;
         };
 
         _QWERTY {
             bindings = <
-            &td_em_bt     &kp F1    &kp F2    &kp F3  &kp F4                                                                                                     &kp F5    &kp F6     &kp F7     &kp F8    &kp F9
+            &mo _BTOOTH   &kp F1    &kp F2    &kp F3  &kp F4                                                                                                     &kp F5    &kp F6     &kp F7     &kp F8    &kp F9
             &kp GRAVE     &kp N1    &kp N2    &kp N3  &kp N4    &kp N5                                                                                   &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &kp EQUAL
             &td_esc_mtsk  &kp Q     &kp W     &kp E   &kp R     &kp T                                                                                    &kp Y   &kp U     &kp I      &kp O      &kp P     &kp MINUS
             &kp TAB       &kp A     &kp S     &kp D   &kp F     &kp G                                                                                    &kp H   &kp J     &kp K      &kp L      &kp SQT   &kp BSLH
@@ -233,7 +190,7 @@
 
         _CLMKdh {
             bindings = <    
-            &td_em_bt     &kp F1    &kp F2    &kp F3  &kp F4                                                                                                      &kp F5    &kp F6     &kp F7     &kp F8    &kp F9
+            &mo _BTOOTH   &kp F1    &kp F2    &kp F3  &kp F4                                                                                                      &kp F5    &kp F6     &kp F7     &kp F8    &kp F9
             &kp GRAVE     &kp N1    &kp N2    &kp N3  &kp N4    &kp N5                                                                                    &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &kp EQUAL
             &td_esc_mtsk  &kp Q     &kp W     &kp F   &kp P     &kp B                                                                                     &kp J   &kp L     &kp U      &kp Y      &kp SQT   &kp MINUS
             &kp TAB       &kp A     &kp R     &kp S   &kp T     &kp G                                                                                     &kp M   &kp N     &kp E      &kp I      &kp O     &kp BSLH
@@ -278,9 +235,9 @@
 
         _GAMING {
             bindings = <
-            &to_34     &kp F8   &kp F7    &kp F6  &kp F5                                                                                           &kp F5    &kp F6     &kp F7     &kp F8    &to _SCZerg
-            &kp GRAVE  &kp F4   &kp F3    &kp F2  &kp F1  &kp F9                                                                           &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &rgb_ug RGB_EFF     
-            &kp BSLH   &kp Q    &kp W     &kp E   &kp R   &kp T                                                                            &kp Y   &kp U     &kp I      &kp O      &kp P     &kp MINUS
+            &to_34     &kp F8   &kp F7    &kp F6  &kp F5                                                                                           &kp F5    &kp F6     &kp F7     &kp F8    &kp ESC
+            &kp GRAVE  &kp F4   &kp F3    &kp F2  &kp F1  &kp F9                                                                           &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &rgb_ug RGB_TOG    
+            &kp BSLH   &kp Q    &kp W     &kp E   &kp R   &kp T                                                                            &kp Y   &kp U     &kp I      &kp O      &kp P     &rgb_ug RGB_EFF
             &kp TAB    &kp A    &kp S     &kp D   &kp F   &kp G                                                                            &kp H   &kp J     &kp K      &kp L      &kp SQT   &kp BSLH
             &kp LSHFT  &kp Z    &kp X     &kp C   &kp V   &kp B   &kp ENTER  &kp BSPC   &kp DEL   &kp RGUI   &kp BSPC   &kp ENTER          &kp N   &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp LSHFT
             &kp EQUAL  &kp N4   &kp N3    &kp N2  &kp N1          &kp SPACE  &kp LCTRL  &kp LALT  &kp RCTRL  &kp RALT   &lt _NAVNUM SPACE          &kp RBKT  &kp DOWN   &kp RIGHT  &kp END   &kp PG_DN
@@ -289,9 +246,9 @@
 
         _SCZerg {
             bindings = <
-            &to_34     &kp F8   &kp F7    &kp F6  &kp F5                                                                                           &kp F5    &kp F6     &kp F7     &kp F8    &to _34KQWE
-            &kp GRAVE  &kp F4   &kp F3    &kp F2  &kp F1  &kp F9                                                                           &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &rgb_ug RGB_EFF     
-            &kp BSLH   &kp Q    &kp W     &kp E   &kp R   &kp T                                                                            &kp Y   &kp U     &kp I      &kp O      &kp P     &kp MINUS
+            &to_34     &kp F8   &kp F7    &kp F6  &kp F5                                                                                           &kp F5    &kp F6     &kp F7     &kp F8    &kp ESC 
+            &kp GRAVE  &kp F4   &kp F3    &kp F2  &kp F1  &kp F9                                                                           &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &rgb_ug RGB_TOG     
+            &kp BSLH   &kp Q    &kp W     &kp E   &kp R   &kp T                                                                            &kp Y   &kp U     &kp I      &kp O      &kp P     &rgb_ug RGB_EFF
             &kp TAB    &kp A    &kp S     &kp D   &kp F   &kp G                                                                            &kp H   &kp J     &kp K      &kp L      &kp SQT   &kp BSLH
             &kp DEL    &kp Z    &kp X     &kp C   &kp V   &kp B   &kp SPACE  &kp ENTER  &kp DEL   &kp RGUI   &kp ENTER          &kp BSPC   &kp N   &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp LSHFT
             &kp EQUAL  &kp N4   &kp N3    &kp N2  &kp N1          &kp LCTRL  &kp LSHFT  &kp LALT  &kp RCTRL  &lt _NAVNUM SPACE  &kp RALT           &kp RBKT  &kp DOWN   &kp RIGHT  &kp END   &kp PG_DN
