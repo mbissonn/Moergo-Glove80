@@ -259,8 +259,8 @@
             &none     &none      &none      &none      &none         &none                                                                       &none       &none         &none         &none           &none      &none
             &none     &kp CAPS   &kp GRAVE  &kp TILDE  &kp C_BRI_DN  &kp C_BRI_AUTO                                                              &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &td_pp_nxt_prv  &td_em_bt  &none
             &none     &kp EXCL   &kp AT     &kp HASH   &kp DLLR      &kp PRCNT                                                                   &kp CARET   &kp AMPS      &kp ASTRK     &kp MINUS       &kp PLUS   &none
-            &none     &kp F1     &kp F2     &kp F3     &kp F4        &kp F5          &trans   &trans       &trans  &trans  &trans       &trans   &kp F6      &kp F7        &kp F8        &kp F9          &kp F10    &none
-            &kp LGUI  &kp LCTRL  &none      &none      &none                         &kp F11  &mo _USFUNC  &trans  &trans  &mo _USFUNC  &kp F12              &none         &none         &none           &kp RCTRL  &kp RGUI
+            &none     &kp F1     &kp F2     &kp F3     &kp F4        &kp F5          &trans       &trans   &trans  &trans  &trans   &trans       &kp F6      &kp F7        &kp F8        &kp F9          &kp F10    &none
+            &kp LGUI  &kp LCTRL  &none      &none      &none                         &mo _USFUNC  &kp F11  &trans  &trans  &kp F12  &mo _USFUNC              &none         &none         &none           &kp RCTRL  &kp RGUI
             >;
         };  
 
@@ -278,12 +278,12 @@
 
         _GAMING {
             bindings = <
-            &kp ESC    &kp F6   &kp F7    &kp F8  &kp F9                                                                                          &none     &none      &none      &none            &dt_gm_tog
-            &kp GRAVE  &kp F1   &kp F2    &kp F3  &kp F4  &kp F5                                                                          &none   &none     &none      &none      &none            &gm_str         
-            &kp BSLH   &kp Q    &kp W     &kp E   &kp R   &kp T                                                                           &kp Y   &kp U     &kp I      &kp O      &kp P            &none
-            &kp TAB    &kp A    &kp S     &kp D   &kp F   &kp G                                                                           &kp H   &kp J     &kp K      &kp L      &kp SQT          &none
-            &kp LSHFT  &kp Z    &kp X     &kp C   &kp V   &kp B  &kp LALT   &kp ENTER  &kp BSPC  &none  &none              &none          &kp N   &kp M     &kp COMMA  &kp DOT    &mt RSHFT SLASH  &none
-            &kp EQUAL  &kp N1   &kp N2    &kp N3  &kp N4         &kp LCTRL  &kp SPACE  &kp DEL   &none  &lt _NAVNUM SPACE  &mt RALT BSPC          &none     &none      &none      &kp RCTRL        &kp RGUI
+            &kp ESC    &kp F6   &kp F7    &kp F8  &kp F9                                                                                           &kp F5    &kp F6     &kp F7     &kp F8    &dt_gm_tog
+            &kp GRAVE  &kp F1   &kp F2    &kp F3  &kp F4  &kp F5                                                                           &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &kp EQUAL     
+            &kp BSLH   &kp Q    &kp W     &kp E   &kp R   &kp T                                                                            &kp Y   &kp U     &kp I      &kp O      &kp P     &kp MINUS
+            &kp TAB    &kp A    &kp S     &kp D   &kp F   &kp G                                                                            &kp H   &kp J     &kp K      &kp L      &kp SQT   &kp BSLH
+            &kp LSHFT  &kp Z    &kp X     &kp C   &kp V   &kp B  &kp ENTER  &kp LALT   &kp BSPC   &kp RGUI   &kp BSPC   &kp ENTER          &kp N   &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp LSHFT
+            &kp EQUAL  &kp N1   &kp N2    &kp N3  &kp N4         &kp SPACE  &kp LCTRL  &kp DEL    &kp RCTRL  &kp RALT   &lt _NAVNUM SPACE          &kp RBKT  &kp DOWN   &kp RIGHT  &kp END   &kp PG_DN
             >;
         };
 
