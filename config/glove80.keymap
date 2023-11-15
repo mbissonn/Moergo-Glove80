@@ -113,7 +113,7 @@
              label = "DOUBLE_TAP_GAMING_TOGGLE";  
              #binding-cells = <0>;
              tapping-term-ms = <200>;
-             bindings = <&none>, <&tog _GAMING &rgb_ug RGB_STATUS>;
+             bindings = <&none>, <&tog _GAMING &rgb_ug RGB_TOG>;
         };
 
         mm_btb_l: mm_brace_to_bracket_left {        
