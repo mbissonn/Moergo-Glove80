@@ -139,7 +139,7 @@
             #binding-cells = <0>;
             wait-ms = <100>;
             tap-ms = <5>;
-            bindings = <&to _34KQWE &rgb_ug RGB_ON &rgb_ug RGB_OFF>;
+            bindings = <&to _34KQWE &rgb_ug RGB_TOG &rgb_ug RGB_TOG>;
         };      
 
         to_gm: to_gaming {
@@ -148,7 +148,7 @@
             #binding-cells = <0>;
             wait-ms = <100>;
             tap-ms = <5>;
-            bindings = <&to _GAMING &rgb_ug RGB_ON &rgb_ug RGB_OFF &rgb_ug RGB_ON &rgb_ug RGB_OFF>;
+            bindings = <&to _GAMING &rgb_ug RGB_TOG &rgb_ug RGB_TOG &rgb_ug RGB_TOG &rgb_ug RGB_TOG>;
         }; 
 
         to_scz: to_sczerg {
@@ -157,7 +157,7 @@
             #binding-cells = <0>;
             wait-ms = <100>;
             tap-ms = <5>;
-            bindings = <&to _SCZerg &rgb_ug RGB_ON &rgb_ug RGB_OFF &rgb_ug RGB_ON &rgb_ug RGB_OFF &rgb_ug RGB_ON &rgb_ug RGB_OFF>;
+            bindings = <&to _SCZerg &rgb_ug RGB_TOG &rgb_ug RGB_TOG &rgb_ug RGB_TOG &rgb_ug RGB_TOG &rgb_ug RGB_TOG &rgb_ug RGB_TOG>;
         }; 
         
               
