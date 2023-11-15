@@ -137,7 +137,7 @@
             compatible = "zmk,behavior-macro";
             label = "TO_34KQWE";
             #binding-cells = <0>;
-            wait-ms = <250>;
+            wait-ms = <100>;
             tap-ms = <5>;
             bindings = <&to _34KQWE &rgb_ug RGB_ON &rgb_ug RGB_OFF>;
         };      
