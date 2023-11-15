@@ -194,7 +194,7 @@
             bindings = <&to _GAMING &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(360,360,360)>;
         }; 
 
-        to_SCz: to_sczerg {
+        to_scz: to_sczerg {
             compatible = "zmk,behavior-macro";
             label = "TO_SCZERG";
             #binding-cells = <0>;
